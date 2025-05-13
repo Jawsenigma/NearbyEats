@@ -25,8 +25,6 @@ A React Native (Expo) app that shows your current location on a map and fetches 
   npm install --global expo-cli
 ```
 
-* Android Studio / Xcode (for emulators), or Expo Go on a real device
-
 ### Installation
 
 1. **Clone the repo**
