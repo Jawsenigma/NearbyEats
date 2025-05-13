@@ -25,7 +25,7 @@ A React Native (Expo) app that shows your current location on a map and fetches 
   npm install --global expo-cli
    ```
 
-## Installation
+### Installation
 
 1. **Clone the repo**
 
@@ -49,35 +49,6 @@ A React Native (Expo) app that shows your current location on a map and fetches 
 
    * Scan the QR code in Expo Go
    * Or press `i` (iOS simulator) / `a` (Android emulator)
-
----
-
-## 📁 Project Structure
-
-```
-NearbyEats/
-├─ app/                 # Expo Router screens
-│  └─ (tabs)/
-│     └─ index.tsx      # Main map & UI code
-├─ hooks/
-│  └─ useCurrentLocation.ts  # Custom hook for Expo Location
-├─ assets/              # Images, icons, etc.
-│  └─ marker-default.png
-├─ app.json             # Expo configuration
-├─ package.json
-├─ tsconfig.json
-└─ README.md
-```
-
----
-
-## 🔧 Configuration
-
-No API keys needed—uses public Overpass endpoint and OpenStreetMap tiles. If you hit rate limits, consider:
-
-* Caching results locally
-* Self-hosting an Overpass instance
-* Throttling/debouncing slider changes
 
 ---
 
