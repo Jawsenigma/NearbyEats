@@ -23,7 +23,7 @@ A React Native (Expo) app that shows your current location on a map and fetches 
 - Expo CLI installed globally (optional):  
   ```bash
   npm install --global expo-cli
-````
+```
 
 * Android Studio / Xcode (for emulators), or Expo Go on a real device
 
@@ -101,5 +101,3 @@ This project is open-source under the [MIT License](LICENSE).
 
 > Built with ❤️ by Tanmay Saxena
 
-```
-```
