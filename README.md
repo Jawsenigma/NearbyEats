@@ -23,9 +23,9 @@ A React Native (Expo) app that shows your current location on a map and fetches 
 - Expo CLI installed globally (optional):  
   ```bash
   npm install --global expo-cli
-```
+   ```
 
-### Installation
+## Installation
 
 1. **Clone the repo**
 
