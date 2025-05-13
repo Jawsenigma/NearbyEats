@@ -1,4 +1,3 @@
-````markdown
 # NearbyEats
 
 A React Native (Expo) app that shows your current location on a map and fetches nearby restaurants within a user-adjustable radius. Built with OpenStreetMap tiles and the Overpass API—no API keys required!
