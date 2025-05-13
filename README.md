@@ -1,50 +1,106 @@
-# Welcome to your Expo app 👋
+````markdown
+# NearbyEats
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native (Expo) app that shows your current location on a map and fetches nearby restaurants within a user-adjustable radius. Built with OpenStreetMap tiles and the Overpass API—no API keys required!
 
-## Get started
+---
 
-1. Install dependencies
+## 🗺️ Features
+
+- **Current-location marker**: Pulsing Google-blue dot with white outline  
+- **Nearby restaurants**: Pins for restaurants fetched via Overpass, labeled with their names  
+- **Search bar**: Filter visible restaurants by name, with dropdown suggestions (up to 5)  
+- **Adjustable radius**: Tap “Adjust radius” to reveal a translucent slider (0.5 – 5 miles); auto-hides after 4 s  
+- **Safe‐area aware**: Layout respects notches and home indicators on iOS/Android  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js v14+  
+- Yarn or npm  
+- Expo CLI installed globally (optional):  
+  ```bash
+  npm install --global expo-cli
+````
+
+* Android Studio / Xcode (for emulators), or Expo Go on a real device
+
+### Installation
+
+1. **Clone the repo**
 
    ```bash
+   git clone https://github.com/your-user/NearbyEats.git
+   cd NearbyEats
+   ```
+2. **Install dependencies**
+
+   ```bash
+   yarn install
+   # or
    npm install
    ```
-
-2. Start the app
+3. **Start the development server**
 
    ```bash
-   npx expo start
+   expo start
    ```
+4. **Run on device / simulator**
 
-In the output, you'll find options to open the app in a
+   * Scan the QR code in Expo Go
+   * Or press `i` (iOS simulator) / `a` (Android emulator)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📁 Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+NearbyEats/
+├─ app/                 # Expo Router screens
+│  └─ (tabs)/
+│     └─ index.tsx      # Main map & UI code
+├─ hooks/
+│  └─ useCurrentLocation.ts  # Custom hook for Expo Location
+├─ assets/              # Images, icons, etc.
+│  └─ marker-default.png
+├─ app.json             # Expo configuration
+├─ package.json
+├─ tsconfig.json
+└─ README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🔧 Configuration
 
-To learn more about developing your project with Expo, look at the following resources:
+No API keys needed—uses public Overpass endpoint and OpenStreetMap tiles. If you hit rate limits, consider:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Caching results locally
+* Self-hosting an Overpass instance
+* Throttling/debouncing slider changes
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 📚 Dependencies
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* [expo](https://expo.dev)
+* [react-native-maps](https://github.com/react-native-maps/react-native-maps)
+* [expo-location](https://docs.expo.dev/versions/latest/sdk/location/)
+* [@react-native-community/slider](https://github.com/callstack/react-native-slider)
+* [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)
+
+---
+
+## 🌟 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+> Built with ❤️ by Tanmay Saxena
+
+```
+```
